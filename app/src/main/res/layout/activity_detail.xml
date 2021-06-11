@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="95dp"
+        android:layout_height="115dp"
+        android:id="@+id/image"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="1.5dp"
+        app:civ_border_color="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:id="@+id/nama"
+        android:layout_below="@+id/image"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notelp"
+        android:text="0855555555555"
+        android:textSize="30dp"
+        android:textColor="#2D978E"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/notelp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/layout"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/call"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_call_24"
+        app:civ_border_width="1.5dp"
+        app:civ_border_color="#FFF"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        />
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/message"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_message_24"
+        android:layout_marginRight="120dp"
+
+       android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:id="@+id/label"
+        android:text="Identitas : "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/label"
+        android:layout_toRightOf="@id/label"
+        android:layout_below="@id/layout"
+        android:id="@+id/identitas"
+        android:text="Identitas"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>

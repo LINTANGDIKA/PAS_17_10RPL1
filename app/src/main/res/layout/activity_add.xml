@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:gravity="center"
+        android:id="@+id/judul"
+        android:layout_marginTop="30dp"
+        android:textSize="35dp"
+         />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/judul"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rv_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number Phone"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/rv_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rv_identitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Identitas"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/rv_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_identitas"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/rv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_identitas"
+        android:layout_centerHorizontal="true"
+        android:text="Add Contact"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+</RelativeLayout>
